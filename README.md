@@ -1,6 +1,6 @@
 # Néctar de Dados
 
-[🔗 Acesse o site aqui](https://fiap-hc-challenge.github.io/gs-nectar-dados-front/)
+[🔗 Acesse o site aqui](https://grazialencar.github.io/gs-nectar-de-dados/)
 
 **Néctar de Dados** é um projeto desenvolvido para facilitar o acesso e o entendimento de informações relacionadas aos impactos climáticos nas regiões btasileiras, especialmente em relação à saúde pública. A plataforma foi criada como parte do desafio **Protect the Future** da FIAP, com foco em acessibilidade, visualização intuitiva e usabilidade.
 
@@ -56,4 +56,4 @@
 | Diego Andrade| RM: 566385  | 1TDSPO      | [GitHub](https://github.com/diandrade)                      | [LinkedIn](https://www.linkedin.com/in/andradedossantosdiego?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)                          |
 
 
-[🔗 https://github.com/fiap-hc-challenge/gs-nectar-dados-front.git](https://github.com/fiap-hc-challenge/gs-nectar-dados-front.git)
+[🔗 https://github.com/fiap-hc-challenge/gs-nectar-dados-front.git](https://github.com/grazialencar/gs-nectar-de-dados.git)
