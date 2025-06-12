@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-index.css">
+    <script src="./js/index.js" defer></script>
+    <script src="./js/solution.js" defer></script>
+
+    <!-- Importando o ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/reveal.js" defer></script>
+
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- Ícones do Google Material -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Nectar de Dados</title>
+</head>
+
+<body>
+    <header id="header">
+
+
+        <!-- Cabeçalho principal -->
+        <div class="header-content">
+            <div class="start-header">
+                <!-- Logos -->
+                <div class="img-logo">
+                    <img src="./img/logo.svg" alt="Logo do Nectar de Dados">
+                </div>
+
+                <!-- Menu de navegação desktop -->
+                <nav class="menu" id="inicio" aria-label="Menu principal">
+                    <ul>
+                        <li><a id="active" href="#">Home</a></li>
+                        <li><a href="./assets/sobre.html">Sobre nós</a></li>
+                        <li><a href="./assets/central.html">Central de Ajuda</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Botão de abrir menu mobile -->
+            <div class="btn-abrir-menu" id="btn-menu">
+                <span class="material-symbols-outlined icon" aria-label="Abrir menu">menu</span>
+            </div>
+
+            <!-- Menu mobile -->
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <span class="material-symbols-outlined icon" aria-label="Fechar menu">close</span>
+                </div>
+                <nav aria-label="Menu mobile">
+                    <ul>
+                        <li><a id="active" href="#">Home</a></li>
+                        <li><a href="./assets/sobre.html">Sobre nós</a></li>
+                        <li><a href="./assets/central.html">Central de Ajuda</a></li>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
+
+
+            <!-- Redes sociais no topo -->
+            <div class="topo">
+                <ul class="box-redes-sociais" aria-label="Redes sociais">
+                    <li class="facebook">
+                        <a href="#" target="_blank" referrerpolicy="no-referrer"
+                            aria-label="Ir para o Facebook do Necta de Dados"><img src="./img/facebook.svg"
+                                alt="Logo do Facebook"></a>
+                    </li>
+                    <li class="instagram">
+                        <a href="#" target="_blank" referrerpolicy="no-referrer"
+                            aria-label="Ir para o Instagram do Necta de Dados"><img src="./img/instagram.svg"
+                                alt="Logo do Instagram"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero efeito-hero">
+            <h1 class="efeito-text">Conectando clima, dados e saúde pública.</h1>
+            <p class="efeito-text">Veja como as mudanças climáticas influenciam a proliferação de doenças nas regiões do Brasil.</p>
+
+            <div class="button-topo efeito-btn">
+                <a href="#weather-form">Análise de risco <img src="./img/arrow-drop-material.svg" alt="ìcone de seta para baixo"></a>
+            </div>
+        </section>
+
+
+
+        <section class="container-entenda">
+            <div class="text-entenda efeito-text">
+                <h2>Entenda o Néctar de Dados</h2>
+                <p>O Néctar de Dados é uma solução interativa que conecta dados climáticos e ambientais com a incidência
+                    de doenças em diferentes regiões do Brasil.</p>
+            </div>
+
+            <div class="gp-card">
+                <article class="card efeito-card1">
+                    <p>Utiliza dados climáticos como temperatura, umidade e condições do tempo para identificar
+                        possíveis riscos à saúde da população. </p>
+                </article>
+
+                <article class="card-white efeito-card2">
+                    <p>O objetivo é informar e proteger, oferecendo orientações práticas para o cotidiano.</p>
+                </article>
+
+                <article class="card efeito-car3">
+                    <p>Tudo é analisado em tempo real e apresentado de forma simples e acessível.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container-monitoramento">
+            <h2 id="h2" class="efeito-text">Monitoramento Local</h2>
+            <p class="efeito-text">Acompanhe as condições climáticas em tempo real e identifique possíveis riscos para a sua região.</p>
+
+            <div class="container-solution efeito-form">
+                <form id="weather-form">
+                    <input type="text" id="city-input" placeholder="Digite a cidade" autocomplete="off" required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+                <div class="weather-result" id="weather-result"></div>
+
+                <div class="export-buttons" id="export-buttons">
+                    <button id="export-json">Exportar JSON</button>
+                    <button id="export-csv">Exportar CSV</button>
+                    <button id="export-txt">Exportar TXT</button>
+                </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <img src="./img/logo.svg" alt="Logo do Nectar de Dados">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="./assets/sobre.html">Sobre nós</a></li>
+            <li><a href="./assets/central.html">Central de Ajuda</a></li>
+        </ul>
+
+        <p>&copy; 2025 Nectar de Dados. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
